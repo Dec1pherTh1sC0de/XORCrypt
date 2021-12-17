@@ -71,14 +71,14 @@ void MainWindow::stringDecrypt(QString strInput, QString strPassword)
 //Зашифровка текста
 void MainWindow::on_pushButton_clicked()
 {
-    stringEncrypt(this->ui->lineEdit->text(),this->ui->label_2->text());
+    stringEncrypt(this->ui->lineEdit->text(),this->ui->lineEdit_2->text());
     this->ui->lineEdit_3->setText(strTXT);
 }
 
 //Расшифровка текста
 void MainWindow::on_pushButton_2_clicked()
 {
-    stringDecrypt(this->ui->lineEdit->text(),this->ui->label_2->text());
+    stringDecrypt(this->ui->lineEdit->text(),this->ui->lineEdit_2->text());
     this->ui->lineEdit_3->setText(strTXT);
 }
 
